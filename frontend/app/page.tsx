@@ -24,7 +24,7 @@ export default async function Home() {
         flow
         className={clsx(styles.root, "homepage")}
       >
-        <Heading headingLevel="h1" emphasize>
+        <Heading headingLevel="h2" styleAs="h1" emphasize>
           Let’s ride!
         </Heading>
 

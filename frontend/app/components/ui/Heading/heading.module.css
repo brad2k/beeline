@@ -5,14 +5,17 @@
 
 .h2 {
   font-size: var(--font-size-h2);
+  letter-spacing: -0.05em;
 }
 
 .h3 {
   font-size: var(--font-size-h3);
+  letter-spacing: -0.05em;
 }
 
 .h4 {
   font-size: var(--font-size-h4);
+  letter-spacing: -0.05em;
 }
 
 .emphasize {

@@ -48,9 +48,17 @@
   font-size: var(--size-step-9);
   text-align: center;
   margin-block-start: var(--space-s);
+  line-height: var(--leading-flat);
+
+  &:hover {
+    .highlight {
+      color: var(--color-text-muted);
+    }
+  }
 }
 
 .highlight {
+  transition: color var(--transition-base);
   background: linear-gradient(
     to bottom,
     transparent 60%,

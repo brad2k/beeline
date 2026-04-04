@@ -16,46 +16,50 @@ function SubnavBar({
   setActiveFilter: (filter: RouteType["area"]) => void;
 }) {
   return (
-    <ul className={styles.subnav}>
-      <li>
-        <Button
-          variant={activeFilter === "all" ? "primary" : "secondary"}
-          onClick={() => setActiveFilter("all")}
-        >
-          Everywhere
-        </Button>
-      </li>
-      <li>
-        <Button
-          variant={activeFilter === "sf" ? "primary" : "secondary"}
-          onClick={() => setActiveFilter("sf")}
-        >
-          San Francisco
-        </Button>
-      </li>
-      <li>
-        <Button
-          variant={activeFilter === "north" ? "primary" : "secondary"}
-          onClick={() => setActiveFilter("north")}
-        >
-          North Bay
-        </Button>
-      </li>
-      <li>
-        <Button
-          variant={activeFilter === "south" ? "primary" : "secondary"}
-          onClick={() => setActiveFilter("south")}
-        >
-          To the South
-        </Button>
-      </li>
-    </ul>
+    <nav aria-label="Route filter" className={styles.subnav}>
+      <ul className={styles.subnavList}>
+        <li>
+          <Button
+            variant={activeFilter === "all" ? "primary" : "secondary"}
+            aria-current={activeFilter === "all" ? "true" : undefined}
+            onClick={() => setActiveFilter("all")}
+          >
+            Everywhere
+          </Button>
+        </li>
+        <li>
+          <Button
+            variant={activeFilter === "sf" ? "primary" : "secondary"}
+            aria-current={activeFilter === "sf" ? "true" : undefined}
+            onClick={() => setActiveFilter("sf")}
+          >
+            San Francisco
+          </Button>
+        </li>
+        <li>
+          <Button
+            variant={activeFilter === "north" ? "primary" : "secondary"}
+            aria-current={activeFilter === "north" ? "true" : undefined}
+            onClick={() => setActiveFilter("north")}
+          >
+            North Bay
+          </Button>
+        </li>
+        <li>
+          <Button
+            variant={activeFilter === "south" ? "primary" : "secondary"}
+            aria-current={activeFilter === "south" ? "true" : undefined}
+            onClick={() => setActiveFilter("south")}
+          >
+            To the South
+          </Button>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
 export default function RouteList({ routes }: { routes: RouteType[] }) {
-  // const [activeFilter, setActiveFilter] = useState<RouteType["area"]>("sf");
-
   const searchParams = useSearchParams();
   const router = useRouter();
   const activeFilter = (searchParams.get("area") as RouteType["area"]) || "sf";

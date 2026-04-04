@@ -36,6 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={clsx(caprasimo.variable, dm_sans.variable, bebas.variable)}
     >
       <body className={styles.root}>{children}</body>

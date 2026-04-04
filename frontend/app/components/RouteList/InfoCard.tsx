@@ -35,7 +35,7 @@ export default function InfoCard() {
 
         <p>Never fear!</p>
       </CardContent>
-      <CardFooter>
+      <CardFooter className={styles.foot}>
         <Link
           className={buttonStyles("secondary")}
           href="/biking-in-san-francisco"

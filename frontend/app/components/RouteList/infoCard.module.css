@@ -1,7 +1,4 @@
 .root {
-  display: grid;
-  grid-row: span 3;
-  grid-template-rows: subgrid;
   background-color: var(--color-accent);
   border: none;
 }
@@ -11,6 +8,7 @@
 }
 
 .body {
+  display: none;
   font-size: var(--size-step-2);
 }
 
@@ -21,4 +19,24 @@
   font-size: var(--size-step-1);
   padding-inline-start: var(--space-m);
   border-left: 2px solid var(--color-text-muted);
+}
+
+.foot {
+  margin-block-start: var(--space-s);
+}
+
+@container (width > 42.375rem) {
+  .body {
+    display: block;
+  }
+
+  .root {
+    grid-template-rows: subgrid;
+    display: grid;
+    grid-row: span 3;
+  }
+
+  .foot {
+    margin-block-start: 0;
+  }
 }

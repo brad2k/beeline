@@ -16,11 +16,11 @@ import type { Route as RouteType } from "@/app/lib/sanity";
 import Badge from "../ui/Badge";
 import styles from "./routePreview.module.css";
 
-interface RoutePreviewProps extends React.PropsWithChildren {
+type RoutePreviewProps = {
   as?: React.ElementType;
   route: RouteType;
   className?: string;
-}
+};
 
 export default function RoutePreview({
   route: r,

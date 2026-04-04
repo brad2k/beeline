@@ -1,10 +1,16 @@
 .routeList {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: var(--space-l);
+  container: routeList / inline-size;
 }
 
 .subnav {
+  max-inline-size: 100%;
+  overflow-x: scroll;
+}
+
+.subnavList {
   display: flex;
   gap: var(--space-s);
 }
