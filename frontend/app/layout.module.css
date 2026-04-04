@@ -1,0 +1,6 @@
+.root {
+  display: grid;
+  grid-template-rows: [primary-header] auto [main] 1fr [footer] auto;
+  gap: var(--space-xl);
+  min-block-size: 100svh;
+}

@@ -1,0 +1,55 @@
+@layer tokens {
+  :root {
+    /* Primary surface tokens */
+    --color-surface: var(--color-fog);
+    --color-bg-footer: var(--color-hive);
+    --color-bg-footer-text: var(--color-fog);
+
+    /* Color tokens */
+    --color-accent: var(--color-honey);
+    --color-accent-dark: var(--color-golden);
+    --color-text: var(--color-hive);
+    --color-text-muted: var(--color-slate);
+    --color-borders: var(--color-pebble);
+
+    /* Cards */
+    --color-card-bg: var(--color-surface);
+    --color-card-border: var(--color-borders);
+    --card-border-radius: var(--radius-s);
+
+    /* Buttons */
+    --color-button-primary-bg: var(--color-honey);
+    --color-button-primary-text: var(--color-hive);
+    --color-button-primary-hover: var(--color-golden);
+    --color-button-secondary-bg: var(--color-slate);
+    --color-button-secondary-text: var(--color-fog);
+    --color-button-secondary-hover: var(--color-hive);
+
+    /* Typography tokens */
+    --font-family-base: var(--font-dm-sans);
+    --font-family-logo: var(--font-caprasimo);
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+    --font-size-base: var(--size-step-1);
+
+    --font-size-h1: var(--size-step-6);
+    --font-size-h2: var(--size-step-5);
+    --font-size-h3: var(--size-step-4);
+    --font-size-h4: var(--size-step-3);
+    --font-size-h5: var(--size-step-2);
+    --font-size-h6: var(--size-step-1);
+
+    /* Badge */
+    --font-size-badge: var(--size-step-000);
+    --color-badge-primary-bg: var(--color-slate);
+    --color-badge-primary-text: var(--color-fog);
+    --color-badge-secondary-bg: var(--color-accent);
+    --color-badge-secondary-text: var(--color-text);
+
+    /* Accessibility tokens */
+    --selection-text-color: var(--color-text);
+    --selection-background: var(--color-accent);
+    --focus-color: var(--color-accent);
+  }
+}

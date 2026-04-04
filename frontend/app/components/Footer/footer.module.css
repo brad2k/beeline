@@ -1,0 +1,12 @@
+.image {
+  --image-width: 111px;
+
+  transform: translateX(calc(75vw - var(--image-width)));
+}
+
+.bar {
+  padding-block: var(--space-m);
+  background-color: var(--color-bg-footer);
+  color: var(--color-bg-footer-text);
+  font-size: var(--size-step-0);
+}

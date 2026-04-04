@@ -1,0 +1,24 @@
+.root {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  background-color: var(--color-accent);
+  border: none;
+}
+
+.header {
+  font-style: italic;
+}
+
+.body {
+  font-size: var(--size-step-2);
+}
+
+.quote {
+  --flow-space: var(--space-s);
+
+  color: var(--color-text-muted);
+  font-size: var(--size-step-1);
+  padding-inline-start: var(--space-m);
+  border-left: 2px solid var(--color-text-muted);
+}

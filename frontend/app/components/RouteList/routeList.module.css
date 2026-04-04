@@ -1,0 +1,10 @@
+.routeList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  gap: var(--space-l);
+}
+
+.subnav {
+  display: flex;
+  gap: var(--space-s);
+}
