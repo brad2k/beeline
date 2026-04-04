@@ -9,4 +9,8 @@
   background-color: var(--color-bg-footer);
   color: var(--color-bg-footer-text);
   font-size: var(--size-step-0);
+
+  a {
+    color: var(--color-bg-footer-text);
+  }
 }
