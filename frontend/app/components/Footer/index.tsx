@@ -15,7 +15,12 @@ export default function Footer() {
         loading="lazy"
       />
       <Layout context="wrapper" className={styles.bar}>
-        <p>The Beeline is a production from Brad Azevedo</p>
+        <p>
+          The Beeline is a production from{" "}
+          <a href="https://www.bradazevedo.com/" rel="external noopener author">
+            Brad Azevedo
+          </a>
+        </p>
       </Layout>
     </footer>
   );
