@@ -1,5 +1,5 @@
 .root {
-  background-color: var(--color-accent);
+  --card-background: var(--color-accent);
   border: none;
 }
 
