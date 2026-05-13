@@ -67,7 +67,7 @@ export default function RouteList({ routes }: { routes: RouteType[] }) {
   const setActiveFilter = (filter: RouteType["area"]) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set("area", filter);
-    router.replace(`?${params.toString()}`);
+    router.replace(`?${params.toString()}`, { scroll: false });
   };
 
   const filteredRoutes = useMemo(
