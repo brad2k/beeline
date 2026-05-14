@@ -3,7 +3,7 @@
   font-size: var(--font-size-badge);
   white-space: nowrap;
   line-height: var(--leading-flat);
-  padding: var(--space-xs);
+  padding: var(--space-xxs) var(--space-xs);
   border-radius: var(--radius-s);
   text-transform: capitalize;
   border: 1px solid var(--border-color);
