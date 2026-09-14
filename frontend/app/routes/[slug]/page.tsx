@@ -1,7 +1,7 @@
 import PageWrapper from "@/app/components/PageWrapper";
 import Layout from "@/app/components/Layout";
 import Heading from "@/app/components/ui/Heading";
-import { getRoute, getRoutes } from "@/app/lib/sanity";
+import { getRoute, getRoutes } from "@/app/lib/sanity-queries";
 import { notFound } from "next/navigation";
 import { Metadata, ResolvingMetadata } from "next";
 import StravaEmbed from "./components/StravaEmbed";
