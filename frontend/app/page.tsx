@@ -2,7 +2,7 @@ import Layout from "@/app/components/Layout";
 import RouteList from "@/app/components/RouteList";
 import Heading from "@/app/components/ui/Heading";
 import PageWrapper from "@/app/components/PageWrapper";
-import { getRoutes } from "@/app/lib/sanity";
+import { getRoutes } from "@/app/lib/sanity-queries";
 import styles from "@/app/page.module.css";
 import clsx from "clsx";
 import { Metadata } from "next";
